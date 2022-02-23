@@ -8,59 +8,24 @@
       "files": {
         "collect_list": [
         {
-            "file_path": "/var/log/nginx/error.log",
-            "log_group_name": "${BRAND}_nginx_error_logs",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
-            "file_path": "/home/${BRAND}/public_html/var/log/php-fpm-error.log",
-            "log_group_name": "${BRAND}_php_app_error_logs",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
-            "file_path": "/home/${BRAND}/public_html/var/log/exception.log",
-            "log_group_name": "${BRAND}_app_error_logs",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
-            "file_path": "/opt/aws/amazon-cloudwatch-agent/logs/amazon-cloudwatch-agent.log",
-            "log_group_name": "${BRAND}_cloudwatch_agent_log",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
-            "file_path": "/var/log/apt/history.log",
-            "log_group_name": "${BRAND}_system_apt_history",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
-            "file_path": "/var/log/syslog",
-            "log_group_name": "${BRAND}_system_syslog",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
-            "file_path": "/var/log/auth.log",
-            "log_group_name": "${BRAND}_system_auth_log",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
-        },
-        {
             "file_path": "/var/log/aws/codedeploy-agent/codedeploy-agent.log",
-            "log_group_name": "${BRAND}_codedeploy-agent-log",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
+            "log_group_name": "codedeploy-agent-log",
+            "log_stream_name": "TestStream"
         },
         {
             "file_path": "/opt/codedeploy-agent/deployment-root/deployment-logs/codedeploy-agent-deployments.log",
-            "log_group_name": "${BRAND}_codedeploy-agent-deployment-log",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
+            "log_group_name": "codedeploy-agent-deployment-log",
+            "log_stream_name": "TestStream"
         },
         {
             "file_path": "/tmp/codedeploy-agent.update.log",
-            "log_group_name": "${BRAND}_codedeploy-agent-updater-log",
-            "log_stream_name": "${ENV}-${instance_id}-${ip_address}"
+            "log_group_name": "codedeploy-agent-updater-log",
+            "log_stream_name": "TestStream"
         }
         ]
       }
     },
-    "log_stream_name": "${DOMAIN}",
+    "log_stream_name": "MO",
     "force_flush_interval" : 60
   }
 }
